@@ -31,14 +31,14 @@ public class Main extends PluginBase implements Listener {
                 if (afkers.contains(name)) {
                     afkers.remove(name);
                     p.setDisplayName(name);
-                    p.sendMessage("\u00A76You are no longer AFK");
-                    this.getServer().broadcastMessage("\u00A72" + name + " is no longer AFK");
+                    p.sendMessage("\u00A73MINEGAMES \u00A78>>\u00A7fyou are no longer AFK");
+                    this.getServer().broadcastMessage("\u00A73MINEGAMES \u00A78>>\u00A7f" + name + "\u00A7f is no longer AFK");
                     return true;
                 } else {
                     afkers.add(name);
-                    p.setDisplayName("\u00A7c[AFK] " + name);
-                    p.sendMessage("\u00A76You are now AFK");
-                    this.getServer().broadcastMessage("\u00A7c" + name + " is now AFK");
+                    p.setDisplayName("\u00A73MINEGAMES \u00A78>>\u00A7f[AFK] " + name);
+                    p.sendMessage("\u00A73MINEGAMES \u00A78>>\u00A7fYou are now AFK");
+                    this.getServer().broadcastMessage("\u00A73MINEGAMES \u00A78>>\u00A7f" + name + "\u00A7f is now AFK");
                     return true;
                 }
             }
